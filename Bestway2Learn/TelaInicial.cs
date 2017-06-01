@@ -10,11 +10,18 @@ using System.Windows.Forms;
 
 namespace Bestway2Learn
 {
-    public partial class Form1 : Form
+    public partial class TelaInicial : Form
     {
-        public Form1()
+        public TelaInicial()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Hide();
+            TelaResultados abreResultados = new TelaResultados();
+            abreResultados.ShowDialog();            
         }
     }
 }
