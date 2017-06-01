@@ -16,5 +16,18 @@ namespace Bestway2Learn
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Hide();
+            TelaInicial abreTelaInicial = new TelaInicial();
+            abreTelaInicial.ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Até a próxima! ;)");
+            Close();
+        }
     }
 }

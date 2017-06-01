@@ -117,18 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="label1.Text" xml:space="preserve">
-    <value>                                  Maravilha! 
-
-Agora que você já possui o conteúdo necessário,
-                              vamos estudar! 
-
-Alguns lembretes básicos, porém necessários: 
-
-- Coloque seu celular no silencioso; 
-- Desligue o wi-fi;
-- Foco total. 
-
-                               E lá vamos nós ...</value>
-  </data>
 </root>

@@ -17,11 +17,32 @@ namespace Bestway2Learn
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnTecnologia_Click(object sender, EventArgs e)
         {
             Hide();
             TelaResultados abreResultados = new TelaResultados();
             abreResultados.ShowDialog();            
+        }
+
+        private void btnCiencias_Click(object sender, EventArgs e)
+        {
+            Hide();
+            TelaResultados abreResultados = new TelaResultados();
+            abreResultados.ShowDialog();
+        }
+
+        private void btnPortugues_Click(object sender, EventArgs e)
+        {
+            Hide();
+            TelaResultados abreResultados = new TelaResultados();
+            abreResultados.ShowDialog();
+        }
+
+        private void btnPesquisar_Click(object sender, EventArgs e)
+        {
+            Hide();
+            TelaResultados abreResultados = new TelaResultados();
+            abreResultados.ShowDialog();
         }
     }
 }

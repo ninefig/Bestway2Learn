@@ -29,5 +29,12 @@ namespace Bestway2Learn
             TelaResultados abreTelaResultados = new TelaResultados();
             abreTelaResultados.ShowDialog();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Hide();
+            TelaFinal abreTelaFinal = new TelaFinal();
+            abreTelaFinal.ShowDialog();
+        }
     }
 }

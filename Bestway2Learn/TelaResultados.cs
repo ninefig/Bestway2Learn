@@ -28,5 +28,12 @@ namespace Bestway2Learn
             TelaAviso_Estudar abreAvisoEstudar = new TelaAviso_Estudar();
             abreAvisoEstudar.ShowDialog();
         }
+
+        private void btnVoltar_Click(object sender, EventArgs e)
+        {
+            Hide();
+            TelaInicial abreTelaInicial = new TelaInicial();
+            abreTelaInicial.ShowDialog();
+        }
     }
 }

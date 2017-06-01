@@ -28,136 +28,174 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button4 = new System.Windows.Forms.Button();
+            this.components = new System.ComponentModel.Container();
+            this.lblOla = new System.Windows.Forms.Label();
+            this.lblTema = new System.Windows.Forms.Label();
+            this.btnTecnologia = new System.Windows.Forms.Button();
+            this.btnCiencias = new System.Windows.Forms.Button();
+            this.btnPortugues = new System.Windows.Forms.Button();
+            this.lblOutraOpcao = new System.Windows.Forms.Label();
+            this.txtAssunto = new System.Windows.Forms.TextBox();
+            this.btnPesquisar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.imgLearn = new System.Windows.Forms.PictureBox();
+            this.Arquivo = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.fonteDasImagensToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imgLearn)).BeginInit();
+            this.Arquivo.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label1
+            // lblOla
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Cornsilk;
-            this.label1.Location = new System.Drawing.Point(146, 52);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(124, 55);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Olá! ";
+            this.lblOla.AutoSize = true;
+            this.lblOla.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOla.ForeColor = System.Drawing.Color.Cornsilk;
+            this.lblOla.Location = new System.Drawing.Point(170, 24);
+            this.lblOla.Name = "lblOla";
+            this.lblOla.Size = new System.Drawing.Size(90, 37);
+            this.lblOla.TabIndex = 0;
+            this.lblOla.Text = "Olá! ";
             // 
-            // label2
+            // lblTema
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label2.Location = new System.Drawing.Point(78, 137);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(261, 29);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Escolha abaixo o tema:";
+            this.lblTema.AutoSize = true;
+            this.lblTema.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTema.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.lblTema.Location = new System.Drawing.Point(89, 193);
+            this.lblTema.Name = "lblTema";
+            this.lblTema.Size = new System.Drawing.Size(261, 29);
+            this.lblTema.TabIndex = 1;
+            this.lblTema.Text = "Escolha abaixo o tema:";
             // 
-            // button1
+            // btnTecnologia
             // 
-            this.button1.Location = new System.Drawing.Point(80, 185);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(256, 39);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Tecnologia";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnTecnologia.Location = new System.Drawing.Point(91, 241);
+            this.btnTecnologia.Name = "btnTecnologia";
+            this.btnTecnologia.Size = new System.Drawing.Size(256, 39);
+            this.btnTecnologia.TabIndex = 2;
+            this.btnTecnologia.Text = "Tecnologia";
+            this.btnTecnologia.UseVisualStyleBackColor = true;
+            this.btnTecnologia.Click += new System.EventHandler(this.btnTecnologia_Click);
             // 
-            // button2
+            // btnCiencias
             // 
-            this.button2.Location = new System.Drawing.Point(80, 243);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(256, 39);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Ciências";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnCiencias.Location = new System.Drawing.Point(91, 299);
+            this.btnCiencias.Name = "btnCiencias";
+            this.btnCiencias.Size = new System.Drawing.Size(256, 39);
+            this.btnCiencias.TabIndex = 3;
+            this.btnCiencias.Text = "Ciências";
+            this.btnCiencias.UseVisualStyleBackColor = true;
+            this.btnCiencias.Click += new System.EventHandler(this.btnCiencias_Click);
             // 
-            // button3
+            // btnPortugues
             // 
-            this.button3.Location = new System.Drawing.Point(80, 299);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(256, 39);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "Português";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnPortugues.Location = new System.Drawing.Point(91, 355);
+            this.btnPortugues.Name = "btnPortugues";
+            this.btnPortugues.Size = new System.Drawing.Size(256, 39);
+            this.btnPortugues.TabIndex = 4;
+            this.btnPortugues.Text = "Português";
+            this.btnPortugues.UseVisualStyleBackColor = true;
+            this.btnPortugues.Click += new System.EventHandler(this.btnPortugues_Click);
             // 
-            // label3
+            // lblOutraOpcao
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(75, 364);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(267, 40);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Caso não seja nenhuma das opções\r\nacima, digite o assunto desejado:";
+            this.lblOutraOpcao.AutoSize = true;
+            this.lblOutraOpcao.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOutraOpcao.Location = new System.Drawing.Point(86, 420);
+            this.lblOutraOpcao.Name = "lblOutraOpcao";
+            this.lblOutraOpcao.Size = new System.Drawing.Size(267, 40);
+            this.lblOutraOpcao.TabIndex = 5;
+            this.lblOutraOpcao.Text = "Caso não seja nenhuma das opções\r\nacima, digite o assunto desejado:";
             // 
-            // textBox1
+            // txtAssunto
             // 
-            this.textBox1.Location = new System.Drawing.Point(80, 426);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(256, 20);
-            this.textBox1.TabIndex = 6;
+            this.txtAssunto.Location = new System.Drawing.Point(91, 482);
+            this.txtAssunto.Name = "txtAssunto";
+            this.txtAssunto.Size = new System.Drawing.Size(256, 20);
+            this.txtAssunto.TabIndex = 6;
             // 
-            // button4
+            // btnPesquisar
             // 
-            this.button4.Location = new System.Drawing.Point(166, 463);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(85, 39);
-            this.button4.TabIndex = 7;
-            this.button4.Text = "Pesquisar";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnPesquisar.Location = new System.Drawing.Point(177, 519);
+            this.btnPesquisar.Name = "btnPesquisar";
+            this.btnPesquisar.Size = new System.Drawing.Size(85, 39);
+            this.btnPesquisar.TabIndex = 7;
+            this.btnPesquisar.Text = "Pesquisar";
+            this.btnPesquisar.UseVisualStyleBackColor = true;
+            this.btnPesquisar.Click += new System.EventHandler(this.btnPesquisar_Click);
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.LightSalmon;
-            this.panel1.Controls.Add(this.button4);
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.button2);
+            this.panel1.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.panel1.Controls.Add(this.imgLearn);
+            this.panel1.Controls.Add(this.btnPesquisar);
+            this.panel1.Controls.Add(this.txtAssunto);
+            this.panel1.Controls.Add(this.lblOla);
+            this.panel1.Controls.Add(this.lblOutraOpcao);
+            this.panel1.Controls.Add(this.lblTema);
+            this.panel1.Controls.Add(this.btnPortugues);
+            this.panel1.Controls.Add(this.btnTecnologia);
+            this.panel1.Controls.Add(this.btnCiencias);
             this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(440, 549);
+            this.panel1.Size = new System.Drawing.Size(463, 577);
             this.panel1.TabIndex = 8;
+            // 
+            // imgLearn
+            // 
+            this.imgLearn.Image = global::Bestway2Learn.Properties.Resources.learn;
+            this.imgLearn.Location = new System.Drawing.Point(127, 75);
+            this.imgLearn.Name = "imgLearn";
+            this.imgLearn.Size = new System.Drawing.Size(174, 105);
+            this.imgLearn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.imgLearn.TabIndex = 8;
+            this.imgLearn.TabStop = false;
+            // 
+            // Arquivo
+            // 
+            this.Arquivo.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fonteDasImagensToolStripMenuItem});
+            this.Arquivo.Name = "Arquivo";
+            this.Arquivo.Size = new System.Drawing.Size(174, 48);
+            // 
+            // fonteDasImagensToolStripMenuItem
+            // 
+            this.fonteDasImagensToolStripMenuItem.Name = "fonteDasImagensToolStripMenuItem";
+            this.fonteDasImagensToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
+            this.fonteDasImagensToolStripMenuItem.Text = "Fonte das imagens";
             // 
             // TelaInicial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(461, 573);
+            this.ClientSize = new System.Drawing.Size(487, 601);
             this.Controls.Add(this.panel1);
             this.Name = "TelaInicial";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Bestway2Learn - Escolha o tema";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imgLearn)).EndInit();
+            this.Arquivo.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Label lblOla;
+        private System.Windows.Forms.Label lblTema;
+        private System.Windows.Forms.Button btnTecnologia;
+        private System.Windows.Forms.Button btnCiencias;
+        private System.Windows.Forms.Button btnPortugues;
+        private System.Windows.Forms.Label lblOutraOpcao;
+        private System.Windows.Forms.TextBox txtAssunto;
+        private System.Windows.Forms.Button btnPesquisar;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox imgLearn;
+        private System.Windows.Forms.ContextMenuStrip Arquivo;
+        private System.Windows.Forms.ToolStripMenuItem fonteDasImagensToolStripMenuItem;
     }
 }
 

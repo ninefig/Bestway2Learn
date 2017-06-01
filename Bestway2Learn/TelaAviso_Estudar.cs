@@ -17,7 +17,7 @@ namespace Bestway2Learn
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnProximo_Click(object sender, EventArgs e)
         {
             Hide();
             TelaAviso1 abreTelaAviso1 = new TelaAviso1();
