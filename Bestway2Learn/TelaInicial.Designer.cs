@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.lblOla = new System.Windows.Forms.Label();
             this.lblTema = new System.Windows.Forms.Label();
             this.btnTecnologia = new System.Windows.Forms.Button();
@@ -39,11 +38,13 @@
             this.btnPesquisar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.imgLearn = new System.Windows.Forms.PictureBox();
-            this.Arquivo = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.fonteDasImagensToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.Arquivo = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuSobre = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuFontes = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgLearn)).BeginInit();
-            this.Arquivo.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblOla
@@ -137,6 +138,7 @@
             this.panel1.Controls.Add(this.btnPortugues);
             this.panel1.Controls.Add(this.btnTecnologia);
             this.panel1.Controls.Add(this.btnCiencias);
+            this.panel1.Controls.Add(this.menuStrip1);
             this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(463, 577);
@@ -152,18 +154,38 @@
             this.imgLearn.TabIndex = 8;
             this.imgLearn.TabStop = false;
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.Arquivo});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(463, 24);
+            this.menuStrip1.TabIndex = 9;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
             // Arquivo
             // 
-            this.Arquivo.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fonteDasImagensToolStripMenuItem});
+            this.Arquivo.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuSobre,
+            this.menuFontes});
             this.Arquivo.Name = "Arquivo";
-            this.Arquivo.Size = new System.Drawing.Size(174, 48);
+            this.Arquivo.Size = new System.Drawing.Size(61, 20);
+            this.Arquivo.Text = "Arquivo";
             // 
-            // fonteDasImagensToolStripMenuItem
+            // menuSobre
             // 
-            this.fonteDasImagensToolStripMenuItem.Name = "fonteDasImagensToolStripMenuItem";
-            this.fonteDasImagensToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
-            this.fonteDasImagensToolStripMenuItem.Text = "Fonte das imagens";
+            this.menuSobre.Name = "menuSobre";
+            this.menuSobre.Size = new System.Drawing.Size(152, 22);
+            this.menuSobre.Text = "Sobre";
+            this.menuSobre.Click += new System.EventHandler(this.menuSobre_Click_1);
+            // 
+            // menuFontes
+            // 
+            this.menuFontes.Name = "menuFontes";
+            this.menuFontes.Size = new System.Drawing.Size(152, 22);
+            this.menuFontes.Text = "Fontes";
+            this.menuFontes.Click += new System.EventHandler(this.menuFontes_Click);
             // 
             // TelaInicial
             // 
@@ -171,13 +193,16 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(487, 601);
             this.Controls.Add(this.panel1);
+            this.MainMenuStrip = this.menuStrip1;
+            this.MaximizeBox = false;
             this.Name = "TelaInicial";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Bestway2Learn - Escolha o tema";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgLearn)).EndInit();
-            this.Arquivo.ResumeLayout(false);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -194,8 +219,10 @@
         private System.Windows.Forms.Button btnPesquisar;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox imgLearn;
-        private System.Windows.Forms.ContextMenuStrip Arquivo;
-        private System.Windows.Forms.ToolStripMenuItem fonteDasImagensToolStripMenuItem;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem Arquivo;
+        private System.Windows.Forms.ToolStripMenuItem menuSobre;
+        private System.Windows.Forms.ToolStripMenuItem menuFontes;
     }
 }
 

@@ -101,6 +101,7 @@
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(731, 566);
             this.Controls.Add(this.panel1);
+            this.MinimizeBox = false;
             this.Name = "TelaPraticar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Bestway2Learn - Praticar";

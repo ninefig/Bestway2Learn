@@ -31,10 +31,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaFinal));
             this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lblTitulo = new System.Windows.Forms.Label();
-            this.lblTexto = new System.Windows.Forms.Label();
-            this.btnClaro = new System.Windows.Forms.Button();
             this.btnNao = new System.Windows.Forms.Button();
+            this.btnClaro = new System.Windows.Forms.Button();
+            this.lblTexto = new System.Windows.Forms.Label();
+            this.lblTitulo = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -56,25 +56,16 @@
             this.panel1.Size = new System.Drawing.Size(541, 498);
             this.panel1.TabIndex = 0;
             // 
-            // lblTitulo
+            // btnNao
             // 
-            this.lblTitulo.AutoSize = true;
-            this.lblTitulo.Font = new System.Drawing.Font("Segoe Print", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.Location = new System.Drawing.Point(123, 13);
-            this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(197, 62);
-            this.lblTitulo.TabIndex = 2;
-            this.lblTitulo.Text = "Parabéns!";
-            // 
-            // lblTexto
-            // 
-            this.lblTexto.AutoSize = true;
-            this.lblTexto.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTexto.Location = new System.Drawing.Point(17, 86);
-            this.lblTexto.Name = "lblTexto";
-            this.lblTexto.Size = new System.Drawing.Size(516, 264);
-            this.lblTexto.TabIndex = 3;
-            this.lblTexto.Text = resources.GetString("lblTexto.Text");
+            this.btnNao.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNao.Location = new System.Drawing.Point(340, 424);
+            this.btnNao.Name = "btnNao";
+            this.btnNao.Size = new System.Drawing.Size(140, 54);
+            this.btnNao.TabIndex = 5;
+            this.btnNao.Text = "Talvez depois, obrigado.";
+            this.btnNao.UseVisualStyleBackColor = true;
+            this.btnNao.Click += new System.EventHandler(this.button2_Click);
             // 
             // btnClaro
             // 
@@ -87,16 +78,25 @@
             this.btnClaro.UseVisualStyleBackColor = true;
             this.btnClaro.Click += new System.EventHandler(this.button1_Click);
             // 
-            // btnNao
+            // lblTexto
             // 
-            this.btnNao.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNao.Location = new System.Drawing.Point(340, 424);
-            this.btnNao.Name = "btnNao";
-            this.btnNao.Size = new System.Drawing.Size(140, 54);
-            this.btnNao.TabIndex = 5;
-            this.btnNao.Text = "Talvez depois, obrigado.";
-            this.btnNao.UseVisualStyleBackColor = true;
-            this.btnNao.Click += new System.EventHandler(this.button2_Click);
+            this.lblTexto.AutoSize = true;
+            this.lblTexto.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTexto.Location = new System.Drawing.Point(17, 86);
+            this.lblTexto.Name = "lblTexto";
+            this.lblTexto.Size = new System.Drawing.Size(516, 264);
+            this.lblTexto.TabIndex = 3;
+            this.lblTexto.Text = resources.GetString("lblTexto.Text");
+            // 
+            // lblTitulo
+            // 
+            this.lblTitulo.AutoSize = true;
+            this.lblTitulo.Font = new System.Drawing.Font("Segoe Print", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.Location = new System.Drawing.Point(123, 13);
+            this.lblTitulo.Name = "lblTitulo";
+            this.lblTitulo.Size = new System.Drawing.Size(197, 62);
+            this.lblTitulo.TabIndex = 2;
+            this.lblTitulo.Text = "Parabéns!";
             // 
             // TelaFinal
             // 
@@ -104,6 +104,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(565, 522);
             this.Controls.Add(this.panel1);
+            this.MaximizeBox = false;
             this.Name = "TelaFinal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Bestway2Learn - Parabéns!";

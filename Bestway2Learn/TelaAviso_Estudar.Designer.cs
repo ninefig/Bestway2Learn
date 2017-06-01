@@ -30,10 +30,10 @@
         {
             this.lblMaravilha = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnProximo = new System.Windows.Forms.Button();
-            this.lbl1 = new System.Windows.Forms.Label();
-            this.lbl2 = new System.Windows.Forms.Label();
             this.lbl3 = new System.Windows.Forms.Label();
+            this.lbl2 = new System.Windows.Forms.Label();
+            this.lbl1 = new System.Windows.Forms.Label();
+            this.btnProximo = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -60,15 +60,25 @@
             this.panel1.Size = new System.Drawing.Size(400, 486);
             this.panel1.TabIndex = 1;
             // 
-            // btnProximo
+            // lbl3
             // 
-            this.btnProximo.Location = new System.Drawing.Point(110, 362);
-            this.btnProximo.Name = "btnProximo";
-            this.btnProximo.Size = new System.Drawing.Size(153, 44);
-            this.btnProximo.TabIndex = 1;
-            this.btnProximo.Text = "PRÓXIMO";
-            this.btnProximo.UseVisualStyleBackColor = true;
-            this.btnProximo.Click += new System.EventHandler(this.btnProximo_Click);
+            this.lbl3.AutoSize = true;
+            this.lbl3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl3.Location = new System.Drawing.Point(3, 309);
+            this.lbl3.Name = "lbl3";
+            this.lbl3.Size = new System.Drawing.Size(268, 20);
+            this.lbl3.TabIndex = 4;
+            this.lbl3.Text = "                       E lá vamos nós  \\o/\r\n";
+            // 
+            // lbl2
+            // 
+            this.lbl2.AutoSize = true;
+            this.lbl2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl2.Location = new System.Drawing.Point(12, 210);
+            this.lbl2.Name = "lbl2";
+            this.lbl2.Size = new System.Drawing.Size(318, 60);
+            this.lbl2.TabIndex = 3;
+            this.lbl2.Text = "- Coloque seu celular no silencioso; \r\n- Desligue o wi-fi;\r\n- Foco total. ";
             // 
             // lbl1
             // 
@@ -81,25 +91,15 @@
             this.lbl1.Text = "\r\nAgora que você já possui o conteúdo necessário,\r\n                            va" +
     "mos estudar! \r\n\r\nAlguns lembretes básicos, porém necessários: \r\n";
             // 
-            // lbl2
+            // btnProximo
             // 
-            this.lbl2.AutoSize = true;
-            this.lbl2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl2.Location = new System.Drawing.Point(12, 210);
-            this.lbl2.Name = "lbl2";
-            this.lbl2.Size = new System.Drawing.Size(318, 60);
-            this.lbl2.TabIndex = 3;
-            this.lbl2.Text = "- Coloque seu celular no silencioso; \r\n- Desligue o wi-fi;\r\n- Foco total. ";
-            // 
-            // lbl3
-            // 
-            this.lbl3.AutoSize = true;
-            this.lbl3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl3.Location = new System.Drawing.Point(3, 309);
-            this.lbl3.Name = "lbl3";
-            this.lbl3.Size = new System.Drawing.Size(268, 20);
-            this.lbl3.TabIndex = 4;
-            this.lbl3.Text = "                       E lá vamos nós  \\o/\r\n";
+            this.btnProximo.Location = new System.Drawing.Point(110, 362);
+            this.btnProximo.Name = "btnProximo";
+            this.btnProximo.Size = new System.Drawing.Size(153, 44);
+            this.btnProximo.TabIndex = 1;
+            this.btnProximo.Text = "PRÓXIMO";
+            this.btnProximo.UseVisualStyleBackColor = true;
+            this.btnProximo.Click += new System.EventHandler(this.btnProximo_Click);
             // 
             // TelaAviso_Estudar
             // 
@@ -107,6 +107,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(424, 510);
             this.Controls.Add(this.panel1);
+            this.MaximizeBox = false;
             this.Name = "TelaAviso_Estudar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Bestway2Learn - Hora de Estudar";

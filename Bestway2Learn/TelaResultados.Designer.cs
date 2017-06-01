@@ -129,6 +129,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(427, 541);
             this.Controls.Add(this.panel1);
+            this.MaximizeBox = false;
             this.Name = "TelaResultados";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Bestway2Learn - Resultados";
