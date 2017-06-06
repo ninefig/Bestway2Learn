@@ -115,6 +115,7 @@
             this.txtAssunto.Name = "txtAssunto";
             this.txtAssunto.Size = new System.Drawing.Size(256, 20);
             this.txtAssunto.TabIndex = 6;
+            this.txtAssunto.TextChanged += new System.EventHandler(this.txtAssunto_TextChanged);
             // 
             // btnPesquisar
             // 
@@ -176,14 +177,14 @@
             // menuSobre
             // 
             this.menuSobre.Name = "menuSobre";
-            this.menuSobre.Size = new System.Drawing.Size(152, 22);
+            this.menuSobre.Size = new System.Drawing.Size(109, 22);
             this.menuSobre.Text = "Sobre";
             this.menuSobre.Click += new System.EventHandler(this.menuSobre_Click_1);
             // 
             // menuFontes
             // 
             this.menuFontes.Name = "menuFontes";
-            this.menuFontes.Size = new System.Drawing.Size(152, 22);
+            this.menuFontes.Size = new System.Drawing.Size(109, 22);
             this.menuFontes.Text = "Fontes";
             this.menuFontes.Click += new System.EventHandler(this.menuFontes_Click);
             // 
