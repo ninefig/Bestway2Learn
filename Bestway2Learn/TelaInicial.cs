@@ -59,7 +59,7 @@ namespace Bestway2Learn
 
                 if (dt.Rows.Count > 0)
                 {
-                    Hide();
+                    Hide(); 
                     txtMateria = txtAssunto.Text;
                     TelaResultados abreResultados = new TelaResultados();
                     abreResultados.ShowDialog();
