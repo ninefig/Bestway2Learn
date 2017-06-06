@@ -17,8 +17,6 @@ namespace Bestway2Learn
         public static SqlConnection ConnectOpen;
         public static String Materia;
         public static String txtMateria;
-        Boolean encontrado;
-
         public TelaInicial()
         {
             InitializeComponent();
@@ -61,7 +59,6 @@ namespace Bestway2Learn
 
                 if (dt.Rows.Count > 0)
                 {
-                    encontrado = true;
                     Hide();
                     txtMateria = txtAssunto.Text;
                     TelaResultados abreResultados = new TelaResultados();
@@ -75,7 +72,6 @@ namespace Bestway2Learn
 
                 if (dt2.Rows.Count > 0)
                 {
-                    encontrado = true;
                     Hide();
                     txtMateria = txtAssunto.Text;
                     TelaResultados abreResultados = new TelaResultados();
