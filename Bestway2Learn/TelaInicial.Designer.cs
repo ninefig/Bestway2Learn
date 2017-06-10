@@ -52,7 +52,7 @@
             this.lblOla.AutoSize = true;
             this.lblOla.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblOla.ForeColor = System.Drawing.Color.Cornsilk;
-            this.lblOla.Location = new System.Drawing.Point(170, 35);
+            this.lblOla.Location = new System.Drawing.Point(183, 35);
             this.lblOla.Name = "lblOla";
             this.lblOla.Size = new System.Drawing.Size(90, 37);
             this.lblOla.TabIndex = 0;
