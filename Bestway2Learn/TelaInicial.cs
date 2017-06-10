@@ -96,5 +96,10 @@ namespace Bestway2Learn
         private void txtAssunto_TextChanged(object sender, EventArgs e)
         {
         }
+
+        private void lblOla_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
